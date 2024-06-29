@@ -38,7 +38,7 @@ goto preset_choice
 rem Loop through all video files in the current directory
 for %%f in (*.mp4 *.avi *.mov *.mkv) do (
 echo Processing %%f
-ffmpeg -hwaccel cuda -i "%%f" -c:v h264_nvenc -crf %crf% -b:v %bitrate% -c:a aac -b:a %audio_bitrate% "%%~nf_%name%.mp4"
+ffmpeg -i "%%f" -c:v h264_nvenc -crf %crf% -b:v %bitrate% -c:a aac -b:a %audio_bitrate% "%%~nf_%name%.mp4"
 )
 
 rem Loop through all files in the current directory
