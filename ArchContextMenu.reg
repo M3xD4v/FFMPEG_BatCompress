@@ -1,0 +1,93 @@
+Windows Registry Editor Version 5.00
+[HKEY_CLASSES_ROOT\Directory\shell\Process]
+"ExtendedSubCommandsKey"="*\\shell\\Process"
+"SeparatorBefore"=""
+"SeparatorAfter"=""
+[HKEY_CLASSES_ROOT\*\shell\Process]
+"Subcommands"=""
+"SeparatorBefore"=""
+"SeparatorAfter"=""
+;====================================================
+	;menu1
+[HKEY_CLASSES_ROOT\*\shell\Process\shell\menu1]
+"MUIVerb"="Video"
+"SubCommands"="arch.compress.low;arch.compress.high;arch.compress.ultra;|;arch.speedup;|;arch.mute;"
+	;menu2
+[HKEY_CLASSES_ROOT\*\shell\Process\shell\menu2]
+"MUIVerb"="Image"
+"SubCommands"="arch.image.convert_png;|;arch.image.compress.low;arch.image.compress.high;arch.image.compress.ultra;|;arch.image.strip;arch.image.rotate;arch.image.flop;arch.image.flip;arch.youtube.download;"
+;====================================================
+	;arch.compress.high
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\arch.compress.high]
+@="Compress High"
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\arch.compress.high\command]
+@="\"C:\\ArchContext\\Video.bat\" \"%1\" \"high\""
+	;arch.compress.low
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\arch.compress.low]
+@="Compress Low"
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\arch.compress.low\command]
+@="\"C:\\ArchContext\\Video.bat\" \"%1\" \"low\""
+	;arch.compress.ultra
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\arch.compress.ultra]
+@="Compress Ultra"
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\arch.compress.ultra\command]
+@="\"C:\\ArchContext\\Video.bat\" \"%1\" \"ultra\""
+	;arch.speedup
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\arch.speedup]
+@="Speed up"
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\arch.speedup\command]
+@="\"C:\\ArchContext\\Video.bat\" \"%1\" \"speed\""
+	;arch.mute
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\arch.mute]
+@="Mute"
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\arch.mute\command]
+@="\"C:\\ArchContext\\Video.bat\" \"%1\" \"mute\""
+;====================================================
+	;arch.image.convert_png
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\arch.image.convert_png]
+@="Convert to PNG"
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\arch.image.convert_png\command]
+@="\"C:\\ArchContext\\Image.bat\" \"%1\" \"convert_png\""
+	;arch.image.compress.low
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\arch.image.compress.low]
+@="Limit to 255 colors"
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\arch.image.compress.low\command]
+@="\"C:\\ArchContext\\Image.bat\" \"%1\" \"255\""
+	;arch.image.compress.high
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\arch.image.compress.high]
+@="Limit to 64 colors"
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\arch.image.compress.high\command]
+@="\"C:\\ArchContext\\Image.bat\" \"%1\" \"64\""
+	;arch.image.compress.ultra
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\arch.image.compress.ultra]
+@="Limit to 16 colors"
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\arch.image.compress.ultra\command]
+@="\"C:\\ArchContext\\Image.bat\" \"%1\" \"16\""
+	;arch.image.strip
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\arch.image.strip]
+@="Strip Image"
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\arch.image.strip\command]
+@="\"C:\\ArchContext\\Image.bat\" \"%1\" \"strip\""
+	;arch.image.rotate
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\arch.image.rotate]
+@="Rotate Image 90 Degrees"
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\arch.image.rotate\command]
+@="\"C:\\ArchContext\\Image.bat\" \"%1\" \"rotate\""
+	;arch.image.flip
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\arch.image.flip]
+@="Flip (Vertically)"
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\arch.image.flip\command]
+@="\"C:\\ArchContext\\Image.bat\" \"%1\" \"flip\""
+	;arch.image.flop
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\arch.image.flop]
+@="Flop (Horizontally)"
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\arch.image.flop\command]
+@="\"C:\\ArchContext\\Image.bat\" \"%1\" \"flop\""
+;====================================================
+	;arch.youtube.download
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\arch.youtube.download]
+@="Download a youtube video"
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\arch.youtube.download\command]
+@="\"C:\\ArchContext\\youtube.bat\" \"download\""
+
+
