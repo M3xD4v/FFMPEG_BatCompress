@@ -7,7 +7,7 @@ rem Prompt user for resolution
 set /p resolution="Enter the desired resolution (e.g., 480, 720, 1080): "
 
 rem Set the yt-dlp command with the user input
-yt-dlp -S "height:%resolution%" %url%
+"C:\ArchContext\yt-dlp.exe" -S "height:%resolution%" %url%
 
 rem Pause the script to allow the user to see the output
 pause
